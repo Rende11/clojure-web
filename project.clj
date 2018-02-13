@@ -7,5 +7,7 @@
                  [ring "1.4.0"]
                  [compojure "1.3.4"]]
   :main todo-list.core
+  :min-lein-version "2.0.0"
+  :uberjar-name "todo-list.jar"
   :profiles {:dev
                 {:main todo-list.core/-dev-main}})
