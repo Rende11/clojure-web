@@ -12,5 +12,6 @@
   :plugins [[environ/environ.lein "0.3.1"]]
   :hooks [environ.leiningen.hooks]
   :uberjar-name "todo-list-standalone.jar"
+  :aot [todo-list.core]
   :profiles {:dev
                 {:main todo-list.core/-dev-main}})
