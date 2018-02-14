@@ -14,4 +14,7 @@
   :uberjar-name "todo-list-standalone.jar"
   :aot [todo-list.core]
   :profiles {:dev
-                {:main todo-list.core/-dev-main}})
+                {:main todo-list.core/-dev-main}
+             :production
+                {:env {:production true}
+                 :main todo-list.core/-main}})
